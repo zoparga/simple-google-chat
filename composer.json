@@ -1,0 +1,28 @@
+{
+    "name": "zoparga/simple-google-chat",
+    "description": "Simple package to send message to Google Chat ( need subscription )",
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "zoparga\\SimpleGoogleChat\\SimpleGoogleChatServiceProvider"
+            ],
+            "aliases": {
+                "SimpleGoogleChat": "zoparga\\SimpleGoogleChat\\Facades\\SimpleGoogleChatFacade"
+            }
+        }
+
+
+    },
+    "authors": [
+        {
+            "name": "PappZ",
+            "email": "zoltan@pappz.hu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "zoparga\\SimpleGoogleChat\\": "src/"
+        }
+    }
+}
