@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Http;
 
 class SimpleGoogleChat
 {
-    public static function sendMessage($text, $textType = 'text', $topLabel = 'Default')
+    public static function sendMessage($text, $chatRoom = 'basic' , $textType = 'text', $topLabel = 'Default')
     {
-        $googleChatUrl = config('simplegooglechat.url');
+        $googleChatUrl = config('simplegooglechat.' . $chatRoom);
         $textMessage = [
             "text" => $text
         ];

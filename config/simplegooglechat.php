@@ -1,6 +1,6 @@
 <?php
 
 return [
-  'url' => env('GOOGLE_CHAT_URL'),
+  'basic' => env('GOOGLE_CHAT_BASIC_ROOM'),
   // other options...
 ];
